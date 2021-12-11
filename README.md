@@ -44,5 +44,5 @@ MyQueue:Run()
 ```
 
 # Contact
-Via @Twitter: https://twitter.com/workframes
-Via @Discord: frames#4888
+Via `@Twitter`: [workframes](https://twitter.com/workframes) <br />
+Via `@Discord`: frames#4888
