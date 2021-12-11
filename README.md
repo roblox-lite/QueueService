@@ -24,7 +24,7 @@ end)
 MyQueue:Run()
 ```
 ## Using `Queue.New`
-This function initiates the queue, the arguments you need to pass are the `queue name`, `refresh rate`, and if the queue should `bulk run`.
+This function initiates the queue, the arguments you need to pass are the `Queue Name`, `Refresh Rate`, and if the queue should `Bulk Run`.
 ```lua
 local MyQueue = QueueService.New("MyQueue", 5, false)
 ```
