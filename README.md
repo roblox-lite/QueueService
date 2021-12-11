@@ -1,5 +1,5 @@
 # QueueService
-Simple queue system
+Simple queue system.
 
 ## Installation
 **Method 1:** Copy the code in [`init.lua`](/init.lua). Then head over to `RobloxStudio` and make a `ModuleScript` in `ReplicatedStorage`. Past the code.
