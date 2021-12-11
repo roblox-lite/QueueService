@@ -43,6 +43,12 @@ This function simply runs the queue according to the refresh rate that was passe
 MyQueue:Run()
 ```
 
+## Using `Clear`
+This function simply clears the current queue, the only argument that is passed in determines whether if the remaining functions of the queue should run at once or just simply clear it.
+```lua
+MyQueue:Clear(false)
+```
+
 # Contact
 Via `@Twitter`: [workframes](https://twitter.com/workframes) <br />
 Via `@Discord`: frames#4888
