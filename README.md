@@ -29,6 +29,12 @@ This function initiates the queue, the arguments you need to pass are the `Queue
 local MyQueue = QueueService.New("MyQueue", 5, false)
 ```
 
+## Using `Queue.Fetch`
+This function lets you use the same queue in multiple scripts. The only argument you pass through is the queues `Name`.
+```lua
+local MyQueue = QueueService.Fetch("MyQueue")
+```
+
 ## Using `Add`
 This function simply adds a item to your queue.
 ```lua
@@ -47,6 +53,18 @@ MyQueue:Run()
 This function simply clears the current queue, the only argument that is passed in determines whether if the remaining functions of the queue should run at once or just simply clear it.
 ```lua
 MyQueue:Clear(false)
+```
+
+## Using `Pause`
+This function simply pauses the current queue.
+```lua
+MyQueue:Pause()
+```
+
+## Using `Resume`
+This function simply resumes the current queue.
+```lua
+MyQueue:Resume()
 ```
 
 # Contact
