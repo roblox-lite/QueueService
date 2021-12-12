@@ -54,12 +54,16 @@ function Queue.RunningQueues:Run()
                 if(#self.Queue > 0)then
                     if(self.MassRun)then
                         for Key, Value in pairs(self.Queue)do
-                            Value()
+                            pcall(function()
+                                Value()
+                            end)
                             self.Queue[Key] = nil
                         end
                     elseif not(self.MassRun)then
                         local Key, Value = next(self.Queue)
-                        Value()
+                        pcall(function()
+                            Value()
+                        end)
                         self.Queue[Key] = nil
                     end
                 end
@@ -69,11 +73,13 @@ function Queue.RunningQueues:Run()
 end
 
 function Queue.RunningQueues:Clear(RunFunctions : boolean)
-    assert(type(RunFunctions) == "boolean", "Argument #1 of Queue.New must be a boolean.")
+    assert(type(RunFunctions) == "boolean", "Argument #1 of Queue.Clear must be a boolean.")
 
     if(RunFunctions)then
         for Key, Value in pairs(self.Queue)do
-            Value()
+            pcall(function()
+                Value()
+            end)
             self.Queue[Key] = nil
         end
 
