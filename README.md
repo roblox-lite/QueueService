@@ -6,6 +6,11 @@ Simple queue system.
 
 **Method 2:** Get the Roblox Model([Link To Model](https://www.roblox.com/library/8229899380/QueueService)). Import it to roblox using the ToolBox and move it to `ReplicatedStorage`
 
+## Example Use cases
+* Datastore System
+* Music System
+* Limiter
+* HttpService Wrapper
 
 ## Basic Usage
 ```lua
