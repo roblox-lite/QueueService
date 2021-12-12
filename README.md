@@ -11,6 +11,9 @@ Simple queue system.
 * Music System
 * Limiter
 * HttpService Wrapper
+* Multi Queue System
+* Animation System
+* Handle Lag
 
 ## Basic Usage
 ```lua
