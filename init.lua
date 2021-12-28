@@ -58,6 +58,10 @@ function Queue.RunningQueues:Run()
                                 Value()
                             end)
                             self.Queue[Key] = nil
+
+                            repeat
+                                task.wait()
+                            until self.Queue[Key] == nil
                         end
                     elseif not(self.MassRun)then
                         local Key, Value = next(self.Queue)
@@ -65,6 +69,10 @@ function Queue.RunningQueues:Run()
                             Value()
                         end)
                         self.Queue[Key] = nil
+
+                        repeat
+                            task.wait()
+                        until self.Queue[Key] == nil
                     end
                 end
             end
